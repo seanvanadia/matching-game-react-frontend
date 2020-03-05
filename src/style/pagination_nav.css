@@ -1,0 +1,69 @@
+.pagination-nav {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.categories-top-pagination-nav, .bottom-pagination-nav, .forward-button, .back-button {
+  position: relative;
+}
+
+/* Bring the top categories navigation closer to the "Update Category's Images" button */
+.categories-top-pagination-nav {
+  bottom: 3px;
+}
+
+/* Bring bottom pagination navs closer to the bottom row of images */
+.bottom-pagination-nav {
+  bottom: 8px;
+}
+
+/* Vertically center forward and back buttons in the pagination nav */
+.forward-button, .back-button {
+  bottom: 1.5px;
+}
+
+.forward-button {
+  margin-left: 15px;
+}
+
+.back-button {
+  margin-right: 15px;
+}
+
+.active-page-number, .active-page-number:focus, .active-page-number:hover {
+  color: rgba(240, 0, 0, 0.67);
+}
+
+.active-page-number:focus {
+  text-decoration: none;
+}
+
+.page-number-button {
+  margin-right: 30px;
+}
+
+.page-number-button, .last-page-number-button {
+  font-size: 18px;
+}
+
+/*********
+* Phones *
+**********/
+@media (max-width: 767.5px) {
+  .categories-top-pagination-nav {
+    bottom: 13px;
+    margin-bottom: 8px;
+  }
+
+  .bottom-pagination-nav {
+    bottom: 15px;
+  }
+
+  .page-number-button, .last-page-number-button {
+    font-size: 16px;
+  }
+
+  .page-number-button {
+    margin-right: 20px;
+  }
+}

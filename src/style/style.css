@@ -1,0 +1,180 @@
+/****************
+* HTML Elements *
+*****************/
+html {
+  scroll-behavior: smooth; /* Only works in Chrome, Firefox, and Opera */
+}
+
+body {
+  background-color: #FFFFEB;
+  font-family: "Droid Serif", sans-serif; /* Font Squirrel Font with sans-serif fallback */
+}
+
+/* Prevent Firefox from flashing alt text before any image loads */
+img:-moz-loading {
+  visibility: hidden;
+}
+
+/* Ensure safari does not zoom on form-control input focus due to small font-size */
+.form-control {
+  font-size: 16px;
+}
+
+/* Make Bootstrap outline styles cross-browser compatible */
+.btn.active.focus, .btn.active:focus, .btn.focus,
+.btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: 1px solid #5191C9; /* Color is for non-webkit browsers */
+  outline-color: -webkit-focus-ring-color;
+  outline-offset: 0;
+}
+
+.dropdown-toggle:focus {
+  outline: 0;
+}
+
+label {
+  font-weight: 400;
+}
+
+a[disabled] {
+  pointer-events: none;
+}
+
+a:focus {
+  outline: 2px solid #5191C9; /* Color is for non-webkit browsers */
+  outline-color: -webkit-focus-ring-color;
+}
+
+/********************
+* Bootstrap Classes *
+*********************/
+.btn-success {
+  background-color: #2B872B;
+}
+
+.btn-danger {
+  background-color: #CC4642;
+}
+
+/******************
+* General Classes *
+*******************/
+.inline-block {
+  display: inline-block;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.text-with-max-width {
+  display: inline-block;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  white-space: nowrap;
+}
+
+.page-container {
+  margin-bottom: 20px;
+}
+
+/**********************
+* Overlays and Popups *
+***********************/
+.screen-level-1 {
+  z-index: 2;
+}
+
+.overlay, .page-not-clickable {
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 2;
+}
+
+.page-not-clickable {
+  z-index: 4;
+}
+
+.pop-up {
+  margin: 0 17.5%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding-bottom: 30px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 65%;
+}
+
+.warning-text {
+  line-height: 1.4;
+  margin-bottom: 20px;
+  overflow-wrap: break-word;
+}
+
+.left-side-button {
+  margin-right: 4px;
+}
+
+/********
+* Other *
+*********/
+.dropdown-menu {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.image-container {
+  margin-bottom: 40px;
+}
+
+.win-total-after-win {
+  color: #008600;
+}
+
+/***********************
+* Desktops and Tablets *
+************************/
+@media (min-width: 767.5px) {
+  .navbar-nav .open .dropdown-menu>li .first-dropdown-item {
+    padding-top: 8px;
+  }
+
+  .navbar-nav .open .dropdown-menu>li .last-dropdown-item {
+    padding-bottom: 8px;
+  }
+}
+
+/*********************
+* Tablets and Phones *
+**********************/
+@media (max-width: 991.5px) {
+  .pop-up {
+    margin: 0 11%;
+    width: 78%;
+  }
+}
+
+/*********
+* Phones *
+**********/
+@media (max-width: 767.5px) {
+  .pop-up {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+
+  .warning-text {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+}

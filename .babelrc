@@ -1,0 +1,28 @@
+{
+  "presets": ["@babel/preset-react", "@babel/preset-env"],
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    ["transform-imports", {
+      "lodash-es": {
+        "transform": "lodash-es/${member}",
+        "preventFullImport": true
+      },
+      "redux-form": {
+        "transform": "redux-form/es/${member}",
+        "preventFullImport": true
+      },
+      "redux": {
+        "transform": "redux/src/${member}",
+        "preventFullImport": true
+      },
+      "../utils": {
+        "transform": "../utils/${member}",
+        "preventFullImport": true
+      },
+      "../../utils": {
+        "transform": "../../utils/${member}",
+        "preventFullImport": true
+      }
+    }]
+  ]
+}

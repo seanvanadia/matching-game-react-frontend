@@ -1,0 +1,8 @@
+.animation-popup {
+  z-index: 2;
+}
+
+.fading-animation {
+  opacity: 0;
+  transition: opacity 0.75s ease-out;
+}

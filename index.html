@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- App Head -->
+  <head>
+    <!-- Meta Tags -->
+    <meta name="description" content="A matching game app where you can play a matching game with your own uploaded images. Try to match up to 100 images at once in this fun matching game app.">
+    <meta name="theme-color" content="#f5f5dc">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- App Title -->
+    <title>Matching Game App</title>
+
+    <!-- Base Url -->
+    <base href="/">
+
+    <!-- Bootstrap and Custom Stylesheet Links (with asynchronous loading) -->
+    <link
+      rel="stylesheet"
+      href="src/style/bootstrap.min.css"
+      media="defer-loading"
+      onload="this.media='all'"
+    >
+    <link
+      rel="stylesheet"
+      href="src/style/style.css"
+      media="defer-loading"
+      onload="this.media='all'"
+    >
+
+    <!-- App Icon Link -->
+    <link rel="icon" href="images/standard/favicon.ico">
+
+    <!-- Apple Touch Icon Link -->
+    <link rel="apple-touch-icon" href="images/standard/favicon.png">
+
+    <!-- App Manifest Link -->
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Establishing App Fonts (from local directory) -->
+    <style>
+      @font-face {
+        font-display: fallback;
+        font-family: 'Droid Serif';
+        font-style: normal;
+        font-weight: normal;
+        src: url('fonts/fontsquirrel/DroidSerif-Bold-webfont.eot');
+        src: url('fonts/fontsquirrel/DroidSerif-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+             url('fonts/fontsquirrel/DroidSerif-Bold-webfont.woff2') format('woff2'),
+             url('fonts/fontsquirrel/DroidSerif-Bold-webfont.woff') format('woff'),
+             url('fonts/fontsquirrel/DroidSerif-Bold-webfont.ttf') format('truetype'),
+             url('fonts/fontsquirrel/DroidSerif-Bold-webfont.svg#droid_serifbold') format('svg');
+      }
+      @font-face {
+        font-display: fallback;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        src: url('fonts/fontsquirrel/Roboto-Regular-webfont.eot');
+        src: url('fonts/fontsquirrel/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/fontsquirrel/Roboto-Regular-webfont.woff2') format('woff2'),
+            url('fonts/fontsquirrel/Roboto-Regular-webfont.woff') format('woff'),
+            url('fonts/fontsquirrel/Roboto-Regular-webfont.ttf') format('truetype'),
+            url('fonts/fontsquirrel/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+      }
+      @font-face {
+        font-display: fallback;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        src: url('fonts/fontsquirrel/Roboto-Bold-webfont.eot');
+        src: url('fonts/fontsquirrel/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/fontsquirrel/Roboto-Bold-webfont.woff2') format('woff2'),
+            url('fonts/fontsquirrel/Roboto-Bold-webfont.woff') format('woff'),
+            url('fonts/fontsquirrel/Roboto-Bold-webfont.ttf') format('truetype'),
+            url('fonts/fontsquirrel/Roboto-Bold-webfont.svg#robotobold') format('svg');
+      }
+    </style>
+  </head>
+
+  <!-- App Body -->
+  <body>
+    <div id="app" />
+  </body>
+
+  <!-- Main Bundle Script -->
+  <script src="/bundle.js"></script>
+
+  <!-- Prompt a message in the browser if JavaScript is disabled -->
+  <noscript>
+    <div style="
+      font-family: 'Droid Serif', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      left: 50%;
+      line-height: 1.6;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    ">
+
+      <!-- Message Text -->
+      JavaScript is not currently enabled in your browser! It must be enabled in order to use this app!
+
+      <!-- Sad Face -->
+      <div style="font-size:38px;">
+        &#9785;
+      </div>
+
+    </div>
+  </noscript>
+
+</html>

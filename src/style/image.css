@@ -1,0 +1,35 @@
+.container {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* Image properties below are for alt text */
+.image {
+  font-size: 1.5em;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/***********************
+* Desktops and Tablets *
+************************/
+@media (min-width: 767.5px) {
+  .image {
+    left: 50%;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*********
+* Phones *
+**********/
+@media (max-width: 767.5px) {
+  .image {
+    margin-bottom: 20px;
+    max-width: 73%;
+  }
+}

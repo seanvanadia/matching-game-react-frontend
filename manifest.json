@@ -1,0 +1,15 @@
+{
+  "short_name": "Match Game",
+  "name": "The Matching Game",
+  "icons": [
+    {
+      "src": "images/standard/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#F5F5DC",
+  "background_color": "#FFFFEB"
+}

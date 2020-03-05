@@ -1,0 +1,47 @@
+.container {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+.warning-text {
+  font-size: 36px;
+}
+
+.stop-sign {
+  font-size: 2em; /* Alt Text */
+  margin-bottom: 18px;
+  margin-top: 18px;
+  max-width: 100%;
+}
+
+.verification-text {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.btn-xl {
+  border-radius: 7px;
+  font-size: 24px;
+  line-height: 1.3333333;
+  padding: 14px 24px;
+}
+
+/*********
+* Phones *
+**********/
+@media (max-width: 767.5px) {
+  .warning-text {
+    font-size: 22px;
+  }
+
+  .stop-sign {
+    font-size: 1.25em;  /* Alt Text */
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .verification-text {
+    font-size: 22px;
+  }
+}

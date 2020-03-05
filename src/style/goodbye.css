@@ -1,0 +1,53 @@
+.text {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 35px;
+}
+
+.signout-face, .delete-acc-face {
+  font-size: 2em; /* Alt Text */
+  margin-top: 25px;
+}
+
+.signout-face {
+  max-width: 65%;
+}
+
+.delete-acc-face {
+  max-width: 85%;
+}
+
+/***********
+* Desktops *
+************/
+@media (min-width: 991.5px) {
+  .text {
+    font-size: 40px;
+  }
+}
+
+/**********
+* Tablets *
+***********/
+@media (min-width: 767.5px) and (max-width: 991.5px) {
+  .delete-acc-face {
+    margin-top: 10px;
+  }
+}
+
+/*********
+* Phones *
+**********/
+@media (max-width: 767.5px) {
+  .text {
+    line-height: 1.4;
+  }
+
+  .signout-face {
+    margin-top: 15px;
+  }
+
+  .delete-acc-face {
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,44 @@
+.popup-overlay {
+  z-index: 3;
+}
+
+.error-text {
+  margin-top: 27px;
+}
+
+.error-code-text {
+  font-size: 21px;
+}
+
+.errors-heading {
+  margin-bottom: -3px;
+}
+
+/*********************
+* Tablets and Phones *
+**********************/
+@media (max-width: 991.5px) {
+  .errors-popup {
+    margin-left: 7%;
+    margin-right: 7%;
+    width: 86%;
+  }
+
+  .ok-button:focus {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+  }
+}
+
+/*********
+* Phones *
+**********/
+@media (max-width: 767.5px) {
+  .error-code-text {
+    font-size: 21px;
+  }
+
+  .errors-heading {
+    font-size: 29px;
+  }
+}

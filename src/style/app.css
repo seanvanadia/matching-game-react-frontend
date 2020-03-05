@@ -1,0 +1,21 @@
+.new-version-alert-overlay {
+  z-index: 5;
+}
+
+.new-version-alert-heading {
+  margin-bottom: -3px;
+}
+
+/*********
+* Phones *
+**********/
+@media (max-width: 767.5px) {
+  .new-version-alert-heading {
+    font-size: 29px;
+  }
+
+  .new-version-text-line-1 {
+    display: block;
+    margin-bottom: 8px;
+  }
+}

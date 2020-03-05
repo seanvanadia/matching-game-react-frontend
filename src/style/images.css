@@ -1,0 +1,277 @@
+/*********
+* Modals *
+**********/
+.modal-heading {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.add-image-modal, .update-image-modal {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.add-image-modal-body {
+  padding-top: 10px;
+}
+
+.add-image-hr {
+  border-top-color: #b7d0a1;
+}
+
+.add-image-hr, .update-image-hr {
+  width: 80%;
+}
+
+/* Hide the default file input */
+input[hidden] {
+  display: none;
+}
+
+/* Display custom file input button */
+.file-input-button {
+  border-radius: 5.5px;
+  font-size: 17px;
+  line-height: 1.3571428;
+  max-width: 165px;
+  padding: 9px 15px;
+}
+
+/* Display custom file name text */
+.image-file-text {
+  display: inline-block;
+  margin-left: 7px;
+  max-width: 200px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle; 
+  white-space: nowrap;
+}
+
+.pagination-nav {
+  margin-top: -3px;
+}
+
+.pagination-btn {
+  margin-right: 9px;
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"].category-checkbox {
+  margin-right: 8px;
+  margin-top: 0;
+  position: relative;
+  vertical-align: middle;
+}
+
+.category-checkboxes {
+  overflow-y: auto;
+}
+
+.first-checkbox {
+  margin-top: 0;
+}
+
+.category-label {
+  display: block;
+  font-size: 19px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.category-checkbox-title {
+  max-width: 95%;
+}
+
+/***********
+* Warnings *
+************/ 
+.no-images-emoji {
+  font-size: 1.25em; /* Alt Text */
+	max-width: 80%;
+}
+
+.no-images-notice, .no-categories-notice {
+	font-size: 28px;
+	line-height: 1.39;
+}
+
+.no-images-emoji, .button-group {
+  margin-top: 15px;
+}
+
+.not-enough-images-alert {
+	font-size: 18px;
+  letter-spacing: 0.5px;
+	line-height: 30px;
+  margin: 25px auto 30px auto;
+  width: 95%;
+}
+
+/***********
+* Page Top *
+************/
+.images-heading {
+  margin-bottom: 25px;
+}
+
+.images-hr {
+  border-top-color: rgba(94, 104, 75, 0.25);
+  margin-bottom: 25px;
+  margin-top: 30px;
+  width: 80%;
+}
+
+/***********************
+* Desktops and Tablets *
+************************/
+@media (min-width: 767.5px) {
+  .delete-image-button {
+    display: block;
+    margin: 0 auto 3px auto;
+  }
+}
+
+/**********
+* Tablets *
+***********/
+@media (min-width: 767.5px) and (max-width: 991.5px) {
+  .pagination-nav {
+    padding-left: 20px;
+  }
+}
+
+/*********
+* Phones *
+**********/
+@media (max-width: 767.5px) {
+  /*********
+  * Modals *
+  **********/
+  .modal-heading {
+    font-size: 22px;
+  }
+
+  .add-image-modal {
+    background-color: #d7e8d0;
+    border-color: #d2f7cb;
+  }
+
+  .add-image-hr {
+    width: 65%;
+  }
+
+  .file-input {
+    font-size: 17.5px;
+    margin: 8px auto 20px auto;
+    width: 90%;
+  }
+
+  .image-file-text {
+    max-width: 40%;
+  }
+
+  .pagination-nav {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  :global .navbar-nav li :local .pagination-btn,
+  :global .navbar-nav li :local .last-pagination-btn {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .category-label {
+    font-size: 18px;
+  }
+
+  input[type="checkbox"].category-checkbox {
+    margin-left: -22px;
+    transform: scale(1.55, 1.55);
+  }
+
+  /* Safari browsers should have different scale for category checkboxes for better appearance */
+  :global .safari :local input[type="checkbox"].category-checkbox {
+    transform: scale(1, 1);
+  }
+
+  .upload-image-button {
+    margin-bottom: 4px;
+    margin-right: 1.5px;
+  }
+
+  .cancel-image-button {
+    margin-bottom: 4px;
+  }
+
+  .update-image-hr {
+    width: 75%;
+  }
+
+  .delete-image-button {
+    margin-bottom: 3px;
+    margin-right: 3px;
+  }
+
+  /***************************
+  * Buttons To Render Modals *
+  ****************************/
+  .add-image-btn {
+    padding: 10px 13%;
+  }
+
+  .update-image-button {
+    margin-bottom: 3px;
+  }
+
+  .button-below-image {
+    font-size: 16.5px;
+  }
+
+  /***********
+  * Page Top *
+  ************/
+  .images-hr {
+    width: 85%;
+  }
+
+  .text-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /***********
+  * Warnings *
+  ************/
+  .not-enough-images-alert {
+    font-size: 15.5px;
+    letter-spacing: 0;
+    line-height: 25px;
+    margin: -10px auto;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+/*******************************
+* Custom File Input Breakpoint *
+********************************/
+@media (max-width: 355px) {
+  .file-input-button {
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    padding: 6px 15px;
+  }
+
+  .image-file-text {
+    display: block;
+    margin: 8px auto 0 auto;
+    max-width: 90%;
+  }
+}

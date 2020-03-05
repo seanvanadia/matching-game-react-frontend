@@ -1,0 +1,238 @@
+/*********
+* Modals *
+**********/
+.modal {
+  z-index: 2;
+}
+
+.modal-input-label, .modal-input {
+  font-size: 17px;
+}
+
+.modal-input-label {
+  display: block;
+}
+
+.modal-input-label-text {
+  margin-bottom: 15px;
+}
+
+.modal-input {
+  margin: 5px auto 25px auto;
+  text-align: center;
+  width: 50%;
+}
+
+/***********
+* Warnings *
+************/
+.images-warning-text, .category-warning-text {
+	font-size: 28px;
+	line-height: 1.39;
+}
+
+.no-images-emoji, .no-categories-emoji {
+  margin-top: 15px;
+	max-width: 80%;
+}
+
+.no-images-emoji {
+  font-size: 1.25em; /* Alt Text */
+}
+
+.no-categories-emoji {
+  font-size: 1.5em; /* Alt Text */
+}
+
+.no-categories-hr {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+/************
+* Dropdowns *
+*************/
+:global .dropdown-menu>li>div {
+  background-color: transparent;
+  padding: 3px 20px;
+}
+
+:global .dropdown-menu>li>div:focus, :global .dropdown-menu>li>div:hover {
+  background-color: #f5f5f5;
+  color: #262626;
+}
+
+.desktop-header-button-row-container {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header-button-row {
+  margin-bottom: 45px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.desktop-header-button-wrapper {
+  width: 33.3%;
+}
+
+.desktop-header-dropdown-button {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.manage-category-dropdown-button {
+  min-width: 305px;
+}
+
+:global(.dropdown)>.desktop-header-dropdown-menu {
+  overflow-y: auto;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  width: 100%;
+}
+
+:global(.dropdown-menu>li>div).manage-category-dropdown-option {
+  line-height: 1.8;
+}
+
+.title-pagination-nav {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.title-pagination-btn {
+  margin-right: 9px;
+}
+
+.category-dropdown-option:hover {
+  background-color: #f5f5f5;
+  color: #333;
+  display: block;
+  text-decoration: none;
+}
+
+.manage-category-title {
+  max-width: 163px;
+}
+
+.delete-category-title {
+  max-width: 140px;
+}
+
+/***********
+* Page Top *
+************/
+.main-hr, .no-categories-hr {
+  border-top-color: rgba(94, 104, 75, 0.25);
+  width: 80%;
+}
+
+.page-heading {
+  line-height: 1.2;
+  margin: 40px 10px 7.6px 10px;
+}
+
+.category-title {
+  overflow-y: hidden;
+}
+
+.main-buttons-wrapper {
+  margin-bottom: 35px;
+  margin-top: 20px;
+}
+
+.save-changes-button {
+  margin-right: 5px;
+}
+
+/********
+* Other *
+*********/
+.image-button {
+  font-size: 16.5px;
+}
+
+/*********************
+* Tablets and Phones *
+**********************/
+@media (max-width: 991.5px) {
+  .non-desktop-main-dropdown-header {
+    font-size: 18px;
+  }
+
+  .non-desktop-header-dropdown-menu {
+    left: 50%;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    transform: translate(-50%, 0);
+  }
+
+  .non-desktop-category-list {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .manage-category-dropdown-option, .category-dropdown-option {
+    color: #333;
+    font: bold 20px sans-serif;
+    padding: 3px 20px;
+  }
+}
+
+/**********
+* Tablets *
+***********/
+@media (min-width: 767.5px) and (max-width: 991.5px) {
+  .header-button-row {
+    margin-bottom: 40px;
+  }
+
+  .page-heading {
+    margin-top: 35px;
+  }
+}
+
+/*********
+* Phones *
+**********/
+@media (max-width: 767.5px) {
+  .modal-input {
+    width: 90%;
+  }
+
+  .warning-text {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .images-warning-text {
+    font-size: 24px;
+  }
+
+  .page-heading {
+    font-size: 33px;
+    margin-top: 30px;
+  }
+
+  .header-button-row {
+    margin-bottom: 35px;
+  }
+
+  .dropdown-header-category-title {
+    margin-right: -1px;
+  }
+
+  .changes-button {
+    font-size: 15px;
+  }
+
+  .save-changes-button {
+    margin-right: 3px;
+  }
+
+  .img-library-button {
+    font-size: 16.5px;
+  }
+}

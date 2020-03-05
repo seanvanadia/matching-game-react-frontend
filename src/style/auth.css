@@ -1,0 +1,96 @@
+/****************
+* HTML Elements *
+*****************/
+label {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+img {
+  font-size: 0.5em;
+}
+
+/***************
+* Form Heading *
+****************/
+.signin-heading {
+  margin-bottom: 35px;
+}
+
+.signup-heading {
+  margin-bottom: 40px;
+}
+
+/************
+* Form Body *
+*************/
+.form-group {
+  margin-bottom: 20px;
+}
+
+.input-label {
+  font-size: 19px;
+}
+
+.label-text {
+  margin-bottom: 15px;
+}
+
+.input-field {
+  margin: 0 auto;
+  width: 40%;
+}
+
+/**************
+* Form Bottom *
+***************/
+.submit-button {
+  margin-bottom: 35px;
+}
+
+.landing-page-link {
+  font-size: 18px;
+}
+
+.landing-page-link:hover {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/**************
+* Form Errors *
+***************/
+.error-text {
+  font-size: 17px;
+  margin-top: 8px;
+}
+
+.error-alert {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 auto 20px auto;
+  width: 40%;
+}
+
+/*********************
+* Tablets and Phones *
+**********************/
+@media (max-width: 991.5px) {
+  .error-alert, .error-text, .input-field {
+    width: 60%;
+  }
+
+  .error-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*********
+* Phones *
+**********/
+@media (max-width: 767.5px) {
+  .error-alert, .error-text, .input-field {
+    width: 80%;
+  }
+}

@@ -1,0 +1,249 @@
+/****************
+* Icomoon Icons *
+*****************/
+@font-face {
+  font-family: 'icomoon';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('../../fonts/icomoon/icomoon.eot?iy3sag');
+  src:  url('../../fonts/icomoon/icomoon.eot?iy3sag#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon/icomoon.ttf?iy3sag') format('truetype'),
+    url('../../fonts/icomoon/icomoon.woff?iy3sag') format('woff'),
+    url('../../fonts/icomoon/icomoon.svg?iy3sag#icomoon') format('svg');
+}
+
+.icon-home {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-size: 33px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+
+/***************************************************
+* Header, Header Brand, and Header Collapse Button *
+****************************************************/
+:global .navbar-default {
+  background-color: #a9b496;
+  border-color: #99a682;
+}
+
+:global .navbar-default .navbar-nav>li>a,
+:global .navbar-default .navbar-nav>li>a:focus,
+:global .navbar-default .navbar-nav li a:hover,
+:global .navbar-default .navbar-brand {
+  color: #151515;
+}
+
+:global .navbar-default .navbar-nav li a:hover,
+:global .navbar-default .navbar-toggle:focus,
+:global .navbar-default .navbar-toggle:hover {
+  background-color: #77855f;
+}
+
+:global .navbar>.container-fluid .navbar-brand {
+  margin-left: 0;
+  margin-top: 15px;
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+:global .navbar-default .navbar-brand:focus,
+:global .navbar-default .navbar-brand:hover {
+  color: black;
+}
+
+:global .navbar-default .navbar-toggle {
+  border-color: #808f66;
+}
+
+:global .navbar-default .navbar-toggle .icon-bar {
+  background-color: #5d674a;
+}
+
+/*****************
+* Header Buttons *
+******************/
+:global(.navbar-nav>li>a).header-button {
+  font-size: 16px;
+}
+
+:global .navbar-default .navbar-nav .open :local .header-button,
+:global .navbar-default .navbar-nav .open :local .header-button:focus,
+:global .navbar-default .navbar-nav .open :local .header-button:hover {
+  background-color: #89986e;
+  color: #151515;
+}
+
+.home-text {
+  margin-bottom: 3.5px;
+}
+
+.manage-text {
+  margin-bottom: 3px;
+}
+
+/************
+* Dropdowns *
+*************/
+:global .dropdown-menu {
+  border: none;
+}
+
+/***********************
+* Desktops and Tablets *
+************************/
+@media (min-width: 768px) {
+  :global .container-fluid {
+    padding-right: 0;
+  }
+
+  .header-button {
+    height: 90px;
+  }
+}
+
+/*********************
+* Tablets and Phones *
+**********************/
+@media (max-width: 991.5px) {
+  .category-dropdown-menu {
+    overflow-y: auto;
+  }
+
+  .current-category-title {
+    line-height: 1.42857143;
+  }
+}
+
+/**********
+* Tablets *
+***********/
+@media (min-width: 767.5px) and (max-width: 991.5px) {
+  :global(.navbar-nav>li>a).header-button {
+    font-size: 15px;
+  }
+
+  .category-dropdown-menu {
+    width: 200px;
+  }
+
+  .current-category-title {
+    max-width: 100px;
+  }
+}
+
+/*********
+* Phones *
+**********/
+@media (max-width: 767.5px) {
+  /*********************
+  * Collapsible Header *
+  **********************/
+  :global .navbar-nav {
+    margin: 0;
+  }
+
+  :global .navbar-nav li a {
+    padding: 28px 0;
+  }
+
+  :global .navbar-default .navbar-collapse {
+    border-color: #919f78;
+    overflow-y: hidden;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  :global(.navbar-default .navbar-collapse).out {
+    border-color: rgba(231, 231, 231, 0);
+    border-width: 0;
+    display: block;
+  }
+
+  /***************
+  * Header Brand *
+  ****************/
+  :global .navbar>.container-fluid .navbar-brand {
+    display: block;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-top: 16px;
+  }
+
+  /************
+  * Dropdowns *
+  *************/
+  :global .navbar-default .navbar-nav .open .dropdown-menu
+   {
+    padding-bottom: 13px;
+    padding-top: 13px;
+  }
+
+  :global .navbar-nav .open .dropdown-menu li a {
+    font-size: 15.5px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  :global .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #151515;
+  }
+
+  :global .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover
+   {
+    background-color: #77855f;
+    color: #151515;
+  }
+
+  .xs-hr {
+    border-top-color: #99a682;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  /*****************
+  * Header Buttons *
+  ******************/
+  :global(.navbar-nav>li>a).header-button {
+    font-size: 18px;
+  }
+
+  .win-total-container {
+    margin-top: 5px;
+  }
+
+  .current-category-title-container {
+    margin-bottom: 3px;
+    margin-top: 5px;
+  }
+
+  .current-category-title {
+    max-width: 80%;
+  }
+
+  .current-category-title-parenthesis {
+    vertical-align: text-top;
+  }
+
+  .other-manage-string-text {
+    line-height: 1.4;
+  }
+
+  :global .navbar-nav>li :local .saying-goodbye-button {
+    line-height: 1.3;
+  }
+}
